@@ -10,16 +10,24 @@ import Foundation
 import UIKit
 
 protocol ColorGeneratorViewControllerProtocol {
-    func showData(color: UIColor)
+    func showColor(color: UIColor)
+    func showHexValue()
 }
 
 extension ColorGeneratorViewController: ColorGeneratorViewControllerProtocol {
-    func showData(color: UIColor) {
+    
+    func showHexValue() {
+        //update UI
+        self.showToast(message: "Valor copiado", font: .systemFont(ofSize: 12.0))
+        }
+    
+    
+    func showColor(color: UIColor) {
         
         DispatchQueue.main.async {
             //update UI
             self.backGround.layer.backgroundColor = color.cgColor
-            self.hexValue.text = "cor gerada: \(color.toHex()!)"
+            self.hexValue.setTitle(color.toHex()!, for: .normal)
         }
 
     }

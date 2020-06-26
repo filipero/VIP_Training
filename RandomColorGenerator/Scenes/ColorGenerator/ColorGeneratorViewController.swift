@@ -11,11 +11,12 @@ import UIKit
 class ColorGeneratorViewController: UIViewController {
 
     @IBOutlet var backGround: UIView!
-    @IBOutlet weak var hexValue: UILabel!
+    @IBOutlet weak var hexValue: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        hexValue.setTitle("8E8E93", for: .normal)
     }
     
     var interactor: ColorGeneratorInteractorProtocol?
@@ -29,10 +30,6 @@ class ColorGeneratorViewController: UIViewController {
         super.init(coder: coder)
         setup()
     }
-}
-
-
-extension ColorGeneratorViewController {
     
     func setup() {
         
@@ -45,12 +42,20 @@ extension ColorGeneratorViewController {
         presenter.controller = self
         
     }
+    
 }
 
+// MARK: - Screen actions
 
 extension ColorGeneratorViewController {
     
+    @IBAction func hexValuePressed(_ sender: UIButton) {
+        if let hexValue = sender.titleLabel?.text {
+            interactor?.fetchHexValue(value: hexValue)
+        }
+    }
+    
     @IBAction func GerarNovaCorPressed(_ sender: UIButton) {
-        interactor?.fetchData()
-       }
+        interactor?.fetchColor()
+    }
 }

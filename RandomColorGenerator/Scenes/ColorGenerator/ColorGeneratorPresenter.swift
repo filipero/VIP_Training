@@ -10,13 +10,18 @@ import Foundation
 import UIKit
 
 protocol ColorGeneratorPresenterProtocol {
-    func presentData(color: UIColor)
+    func presentColor(color: UIColor)
+    func presentHexValue()
 }
 
 class ColorGeneratorPresenter: ColorGeneratorPresenterProtocol {
     var controller: ColorGeneratorViewControllerProtocol?
     
-    func presentData(color: UIColor) {
-        self.controller?.showData(color: color)
+    func presentHexValue(){
+        self.controller?.showHexValue()
+    }
+    
+    func presentColor(color: UIColor) {
+        self.controller?.showColor(color: color)
     }
 }
