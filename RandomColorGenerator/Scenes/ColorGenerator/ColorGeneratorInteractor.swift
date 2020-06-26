@@ -9,17 +9,23 @@
 import Foundation
 import UIKit
 protocol ColorGeneratorInteractorProtocol {
-    func fetchData()
+    func fetchColor()
+    func fetchHexValue(value: String)
 }
 
 class ColorGeneratorInteractor: ColorGeneratorInteractorProtocol {
+    func fetchHexValue(value: String) {
+        UIPasteboard.general.string = value
+        self.presenter?.presentHexValue()
+    }
+    
     
     var presenter: ColorGeneratorPresenterProtocol?
     
-    func fetchData() {
+    func fetchColor() {
         
         let color: UIColor = UIColor.randomColor
         
-        self.presenter?.presentData(color: color)
+        self.presenter?.presentColor(color: color)
     }
 }

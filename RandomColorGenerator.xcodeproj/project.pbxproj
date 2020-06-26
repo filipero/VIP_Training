@@ -18,6 +18,7 @@
 		3F0545F824A3B0E3004E0742 /* ColorGeneratorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0545F724A3B0E3004E0742 /* ColorGeneratorPresenter.swift */; };
 		3F0545FA24A3B0F6004E0742 /* ColorGeneratorViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0545F924A3B0F6004E0742 /* ColorGeneratorViewControllerProtocols.swift */; };
 		3F0545FD24A3B12F004E0742 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0545FC24A3B12F004E0742 /* UIColorExtensions.swift */; };
+		3F0545FF24A65118004E0742 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0545FE24A65118004E0742 /* ViewControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		3F0545F724A3B0E3004E0742 /* ColorGeneratorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGeneratorPresenter.swift; sourceTree = "<group>"; };
 		3F0545F924A3B0F6004E0742 /* ColorGeneratorViewControllerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGeneratorViewControllerProtocols.swift; sourceTree = "<group>"; };
 		3F0545FC24A3B12F004E0742 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		3F0545FE24A65118004E0742 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				3F0545FC24A3B12F004E0742 /* UIColorExtensions.swift */,
+				3F0545FE24A65118004E0742 /* ViewControllerExtensions.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0545FF24A65118004E0742 /* ViewControllerExtensions.swift in Sources */,
 				3F0545D624A3AFF7004E0742 /* ColorGeneratorViewController.swift in Sources */,
 				3F0545D224A3AFF7004E0742 /* AppDelegate.swift in Sources */,
 				3F0545F624A3B0D5004E0742 /* ColorGeneratorInteractor.swift in Sources */,
