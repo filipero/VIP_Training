@@ -2,4 +2,4 @@
 Aplicativo gerador de cores para treinar implementação do Design Pattern VIP.
 
 ### Showcase
-![](app_showcase.gif)
+<img src="app_showcase_gif.gif" width="108" height="192"/>
