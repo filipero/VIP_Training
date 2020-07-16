@@ -19,6 +19,9 @@
 		3F0545FA24A3B0F6004E0742 /* ColorGeneratorViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0545F924A3B0F6004E0742 /* ColorGeneratorViewControllerProtocols.swift */; };
 		3F0545FD24A3B12F004E0742 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0545FC24A3B12F004E0742 /* UIColorExtensions.swift */; };
 		3F0545FF24A65118004E0742 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0545FE24A65118004E0742 /* ViewControllerExtensions.swift */; };
+		3F124D1124C0B05500E94874 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F124D1024C0B05500E94874 /* GoogleService-Info.plist */; };
+		3F297C6E940727FCC44EF82D /* Pods_RandomColorGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13126AE9739E7673637A40E8 /* Pods_RandomColorGenerator.framework */; };
+		556958C4926429E630131E06 /* Pods_RandomColorGeneratorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD28914E5AD4E737A991A3E7 /* Pods_RandomColorGeneratorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13126AE9739E7673637A40E8 /* Pods_RandomColorGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomColorGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2088F92BD2677BC28076C4EB /* Pods-RandomColorGeneratorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGeneratorTests.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorGeneratorTests/Pods-RandomColorGeneratorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F0545CE24A3AFF7004E0742 /* RandomColorGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColorGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0545D124A3AFF7004E0742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F0545D324A3AFF7004E0742 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +53,11 @@
 		3F0545F924A3B0F6004E0742 /* ColorGeneratorViewControllerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGeneratorViewControllerProtocols.swift; sourceTree = "<group>"; };
 		3F0545FC24A3B12F004E0742 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		3F0545FE24A65118004E0742 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		3F124D1024C0B05500E94874 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60B0A758B1E30C9B133E0994 /* Pods-RandomColorGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGenerator.release.xcconfig"; path = "Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator.release.xcconfig"; sourceTree = "<group>"; };
+		A30F6DE38836E4DF3309EF5A /* Pods-RandomColorGeneratorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGeneratorTests.release.xcconfig"; path = "Target Support Files/Pods-RandomColorGeneratorTests/Pods-RandomColorGeneratorTests.release.xcconfig"; sourceTree = "<group>"; };
+		DAA47A2EB8E0A7B513BEA947 /* Pods-RandomColorGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGenerator.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator.debug.xcconfig"; sourceTree = "<group>"; };
+		DD28914E5AD4E737A991A3E7 /* Pods_RandomColorGeneratorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomColorGeneratorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F297C6E940727FCC44EF82D /* Pods_RandomColorGenerator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556958C4926429E630131E06 /* Pods_RandomColorGeneratorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +86,8 @@
 				3F0545D024A3AFF7004E0742 /* RandomColorGenerator */,
 				3F0545E724A3AFFA004E0742 /* RandomColorGeneratorTests */,
 				3F0545CF24A3AFF7004E0742 /* Products */,
+				5EA29DFD50E2344B6680DA4D /* Pods */,
+				773CC4A59149272A911CBAFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +111,7 @@
 				3F0545DA24A3AFFA004E0742 /* Assets.xcassets */,
 				3F0545DC24A3AFFA004E0742 /* LaunchScreen.storyboard */,
 				3F0545DF24A3AFFA004E0742 /* Info.plist */,
+				3F124D1024C0B05500E94874 /* GoogleService-Info.plist */,
 			);
 			path = RandomColorGenerator;
 			sourceTree = "<group>";
@@ -138,6 +153,27 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		5EA29DFD50E2344B6680DA4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAA47A2EB8E0A7B513BEA947 /* Pods-RandomColorGenerator.debug.xcconfig */,
+				60B0A758B1E30C9B133E0994 /* Pods-RandomColorGenerator.release.xcconfig */,
+				2088F92BD2677BC28076C4EB /* Pods-RandomColorGeneratorTests.debug.xcconfig */,
+				A30F6DE38836E4DF3309EF5A /* Pods-RandomColorGeneratorTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		773CC4A59149272A911CBAFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13126AE9739E7673637A40E8 /* Pods_RandomColorGenerator.framework */,
+				DD28914E5AD4E737A991A3E7 /* Pods_RandomColorGeneratorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F0545ED24A3AFFA004E0742 /* Build configuration list for PBXNativeTarget "RandomColorGenerator" */;
 			buildPhases = (
+				0A2D9B98A8FBBEBE805B88EF /* [CP] Check Pods Manifest.lock */,
 				3F0545CA24A3AFF7004E0742 /* Sources */,
 				3F0545CB24A3AFF7004E0742 /* Frameworks */,
 				3F0545CC24A3AFF7004E0742 /* Resources */,
+				CAD3C4F1DAE476C546838A1A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F0545F024A3AFFA004E0742 /* Build configuration list for PBXNativeTarget "RandomColorGeneratorTests" */;
 			buildPhases = (
+				A75AD41B6CECECAF3E101EF7 /* [CP] Check Pods Manifest.lock */,
 				3F0545E024A3AFFA004E0742 /* Sources */,
 				3F0545E124A3AFFA004E0742 /* Frameworks */,
 				3F0545E224A3AFFA004E0742 /* Resources */,
@@ -220,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F0545DE24A3AFFA004E0742 /* LaunchScreen.storyboard in Resources */,
+				3F124D1124C0B05500E94874 /* GoogleService-Info.plist in Resources */,
 				3F0545DB24A3AFFA004E0742 /* Assets.xcassets in Resources */,
 				3F0545D924A3AFF7004E0742 /* Main.storyboard in Resources */,
 			);
@@ -233,6 +273,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A2D9B98A8FBBEBE805B88EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomColorGenerator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A75AD41B6CECECAF3E101EF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomColorGeneratorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAD3C4F1DAE476C546838A1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F0545CA24A3AFF7004E0742 /* Sources */ = {
@@ -404,6 +508,7 @@
 		};
 		3F0545EE24A3AFFA004E0742 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAA47A2EB8E0A7B513BEA947 /* Pods-RandomColorGenerator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -422,6 +527,7 @@
 		};
 		3F0545EF24A3AFFA004E0742 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B0A758B1E30C9B133E0994 /* Pods-RandomColorGenerator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,6 +546,7 @@
 		};
 		3F0545F124A3AFFA004E0742 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2088F92BD2677BC28076C4EB /* Pods-RandomColorGeneratorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +569,7 @@
 		};
 		3F0545F224A3AFFA004E0742 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30F6DE38836E4DF3309EF5A /* Pods-RandomColorGeneratorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
