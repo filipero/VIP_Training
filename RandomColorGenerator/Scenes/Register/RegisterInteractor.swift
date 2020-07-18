@@ -9,14 +9,14 @@
 import Foundation
 
 protocol RegisterInteractorProtocol {
-    func fetch()
+    func fetch(email: String, password: String)
 }
 
 class RegisterInteractor: RegisterInteractorProtocol {
     
     var presenter: RegisterPresenterProtocol?
     
-    func fetch() {
+    func fetch(email: String, password: String) {
         
     }
 }

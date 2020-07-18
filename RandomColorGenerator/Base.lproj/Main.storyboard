@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="w1e-wD-fAV">
             <objects>
-                <viewController id="OEi-vF-03l" sceneMemberID="viewController">
+                <viewController id="OEi-vF-03l" customClass="RegisterViewController" customModule="RandomColorGenerator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygi-4g-215">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
