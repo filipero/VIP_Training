@@ -10,55 +10,43 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     
-    private let label: UILabel = {
-        
-        let label = UILabel()
-        label.textAlignment = .center
-        label.text = "Sign up"
-        label.font = .systemFont(ofSize: 24, weight: .semibold)
-        
-        return label
-    }()
+    @IBOutlet weak var pageTitle: UILabel!
+    @IBOutlet weak var pageLogo: UIImageView!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var registerButton: UIButton!
     
-    private let emailField: UITextField = {
-        
-        let emailField = UITextField()
-        emailField.placeholder = "Email address"
-        emailField.layer.borderWidth = 1
-        emailField.layer.borderColor = UIColor.black.cgColor
-        
-        return emailField
-    }()
-    
-    private let passwordField: UITextField = {
-        
-        let passwordField = UITextField()
-        passwordField.isSecureTextEntry = true
-        passwordField.layer.borderWidth = 1
-        passwordField.layer.borderColor = UIColor.black.cgColor
-        
-        return passwordField
-    }()
-    
-    private let registerButton: UIButton = {
-        
-        let registerButton = UIButton()
-        registerButton.backgroundColor = .systemGreen
-        registerButton.setTitleColor(.white, for: .normal)
-        registerButton.setTitle("Continue", for: .normal)
-        
-        return registerButton
-    }()
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(label)
-        view.addSubview(emailField)
-        view.addSubview(passwordField)
-        view.addSubview(registerButton)
-        registerButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
-        // Do any additional setup after loading the view.
+        
+        let leftPadding = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        
+        emailField.layer.cornerRadius = 18
+        emailField.layer.borderWidth = 1
+        emailField.layer.borderColor = #colorLiteral(red: 0.4392156863, green: 0.4392156863, blue: 0.4392156863, alpha: 1)
+        emailField.textColor = #colorLiteral(red: 0.4392156863, green: 0.4392156863, blue: 0.4392156863, alpha: 1)
+        emailField.borderStyle = .none
+        emailField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10 ,height:10))
+        // Using the leftPadding constant breaks the screen!
+        emailField.leftViewMode = .always
+        
+        passwordField.layer.cornerRadius = 18
+        passwordField.layer.borderWidth = 1
+        passwordField.layer.borderColor = #colorLiteral(red: 0.4392156863, green: 0.4392156863, blue: 0.4392156863, alpha: 1)
+        passwordField.textColor = #colorLiteral(red: 0.4392156863, green: 0.4392156863, blue: 0.4392156863, alpha: 1)
+        passwordField.isSecureTextEntry = true
+        passwordField.borderStyle = .none
+        passwordField.leftView = leftPadding
+        passwordField.leftViewMode = .always
+        
+        registerButton.layer.borderWidth = 1
+        registerButton.layer.borderColor = #colorLiteral(red: 0.4392156863, green: 0.4392156863, blue: 0.4392156863, alpha: 1)
+        registerButton.layer.cornerRadius = 18
+        registerButton.imageEdgeInsets.right = 0 - registerButton.frame.width - 50
+        registerButton.titleEdgeInsets.right = 0
+
     }
+    
     var interactor: RegisterInteractorProtocol?
         
         override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -83,30 +71,13 @@ class RegisterViewController: UIViewController {
             
         }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        label.frame = CGRect(x: 0, y: 100,
-                             width: view.frame.size.width, height: 80)
-        
-        emailField.frame = CGRect(x: 20, y: label.frame.origin.y + label.frame.size.height + 10, width: view.frame.size.width-40, height: 50)
-        
-        passwordField.frame = CGRect(x: 20, y: emailField.frame.origin.y + emailField.frame.size.height + 10,
-                                     width: view.frame.size.width-40, height: 50)
-        
-        registerButton.frame = CGRect(x: 20, y: passwordField.frame.origin.y + passwordField.frame.size.height + 10,
-                                      width: view.frame.size.width-40, height: 80)
-    }
-        
-    @objc private func didTapButton(){
-        print("Button was tapped")
+    @IBAction func didTapRegisterButton(_ sender: UIButton) {
         guard let email = emailField.text, !email.isEmpty, let password = passwordField.text, !password.isEmpty else {
             print("An error has occurred")
             return
-            interactor?.fetch()
         }
+        interactor?.fetch(email: email, password: password)
     }
-        
-    }
+}
 
 

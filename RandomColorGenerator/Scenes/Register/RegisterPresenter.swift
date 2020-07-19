@@ -13,10 +13,10 @@ protocol RegisterPresenterProtocol {
 }
 
 class RegisterPresenter: RegisterPresenterProtocol {
-    
     var controller: RegisterViewControllerProtocol?
     
     func present() {
         
+        controller?.show()
     }
 }

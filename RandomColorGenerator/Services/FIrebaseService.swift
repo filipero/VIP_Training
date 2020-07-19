@@ -14,14 +14,13 @@ class AuthService {
     
     func RegisterUser(email:String, password: String) {
         FAuth.createUser(withEmail: email, password: password) { authResult, error in
-            
-            
+            self.Login(email: email, password: password)
         }
     }
     
     func Login(email:String, password: String) {
-        FAuth.signIn(withEmail: email, password: password) { authResult, error in
-            
+        FAuth.signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            guard let strongSelf = self else { return }
         }
     }
     

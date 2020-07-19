@@ -17,6 +17,8 @@ class RegisterInteractor: RegisterInteractorProtocol {
     var presenter: RegisterPresenterProtocol?
     
     func fetch(email: String, password: String) {
+        AuthService().RegisterUser(email: email, password: password)
         
+        presenter?.present()
     }
 }
