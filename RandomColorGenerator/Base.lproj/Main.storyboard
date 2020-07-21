@@ -1,22 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OEi-vF-03l">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hV0-G7-bRI">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="BMh-9h-biX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2LP-jz-7KO">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eMJ-pF-87U">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="OEi-vF-03l" kind="relationship" relationship="rootViewController" id="pEU-EE-QBj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hff-h8-M3U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1438" y="119"/>
+        </scene>
         <!--Color Generator View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ColorGeneratorViewController" customModule="RandomColorGenerator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pJ-nn-JdE">
-                                <rect key="frame" x="121.5" y="427.5" width="171" height="41"/>
+                                <rect key="frame" x="102" y="313" width="171" height="41"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="Gerar nova cor">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -26,7 +52,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Zf-fG-Y2m">
-                                <rect key="frame" x="128.5" y="327.5" width="157.5" height="70"/>
+                                <rect key="frame" x="109" y="213" width="157.5" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cor gerada:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrZ-7m-Rpa">
                                         <rect key="frame" x="20" y="20" width="97.5" height="30"/>
@@ -71,7 +97,110 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+            <point key="canvasLocation" x="1164" y="118"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="w1e-wD-fAV">
+            <objects>
+                <viewController id="OEi-vF-03l" customClass="RegisterViewController" customModule="RandomColorGenerator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ygi-4g-215">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FJh-nw-eiG">
+                                <rect key="frame" x="20" y="330" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WRt-ex-8JU"/>
+                                </constraints>
+                                <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="6PD-5K-Vn4">
+                                <rect key="frame" x="20" y="395" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1Tw-ze-sSm"/>
+                                </constraints>
+                                <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pipette" translatesAutoresizingMaskIntoConstraints="NO" id="rML-LA-cQ5">
+                                <rect key="frame" x="117.5" y="100" width="140" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="agM-rV-wxz"/>
+                                    <constraint firstAttribute="width" constant="140.16" id="gQv-CZ-VAN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeM-b7-PvL">
+                                <rect key="frame" x="20" y="525" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wQ7-Sx-icc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <color key="tintColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Concluir cadastro" image="arrow.right" catalog="system">
+                                    <color key="titleColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapRegisterButton:" destination="OEi-vF-03l" eventType="touchUpInside" id="Hpm-Gy-T7X"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastrar-se" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kt6-9p-acL">
+                                <rect key="frame" x="0.0" y="30" width="375" height="35"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="30"/>
+                                <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cr-qf-5El">
+                                <rect key="frame" x="20" y="590" width="335" height="31"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="16"/>
+                                <state key="normal" title="Já possui uma conta?">
+                                    <color key="titleColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapGoToLoginPage:" destination="OEi-vF-03l" eventType="touchUpInside" id="Qee-ym-bDw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6PD-5K-Vn4" firstAttribute="leading" secondItem="Qm1-aP-i0e" secondAttribute="leading" constant="20" id="2Sy-PP-obf"/>
+                            <constraint firstItem="aeM-b7-PvL" firstAttribute="leading" secondItem="Qm1-aP-i0e" secondAttribute="leading" constant="20" id="6ZE-1E-4k6"/>
+                            <constraint firstItem="2Cr-qf-5El" firstAttribute="leading" secondItem="Qm1-aP-i0e" secondAttribute="leading" constant="20" id="BAW-ov-WwQ"/>
+                            <constraint firstItem="rML-LA-cQ5" firstAttribute="top" secondItem="Kt6-9p-acL" secondAttribute="bottom" constant="35" id="BNK-PI-LXp"/>
+                            <constraint firstItem="6PD-5K-Vn4" firstAttribute="top" secondItem="FJh-nw-eiG" secondAttribute="bottom" constant="15" id="CqG-q9-qRO"/>
+                            <constraint firstItem="Qm1-aP-i0e" firstAttribute="trailing" secondItem="Kt6-9p-acL" secondAttribute="trailing" id="FlI-gl-LmF"/>
+                            <constraint firstItem="Kt6-9p-acL" firstAttribute="leading" secondItem="Qm1-aP-i0e" secondAttribute="leading" id="Jlk-nG-FJI"/>
+                            <constraint firstItem="aeM-b7-PvL" firstAttribute="top" secondItem="6PD-5K-Vn4" secondAttribute="bottom" constant="80" id="OXo-Wo-Kh4"/>
+                            <constraint firstItem="Qm1-aP-i0e" firstAttribute="trailing" secondItem="6PD-5K-Vn4" secondAttribute="trailing" constant="20" id="Qmu-y3-NfH"/>
+                            <constraint firstItem="2Cr-qf-5El" firstAttribute="top" secondItem="aeM-b7-PvL" secondAttribute="bottom" constant="15" id="XEn-ea-m0o"/>
+                            <constraint firstItem="Qm1-aP-i0e" firstAttribute="trailing" secondItem="2Cr-qf-5El" secondAttribute="trailing" constant="20" id="eo9-Qf-tyu"/>
+                            <constraint firstItem="Qm1-aP-i0e" firstAttribute="trailing" secondItem="FJh-nw-eiG" secondAttribute="trailing" constant="20" id="iEk-MW-ake"/>
+                            <constraint firstItem="Qm1-aP-i0e" firstAttribute="trailing" secondItem="aeM-b7-PvL" secondAttribute="trailing" constant="20" id="l9R-1G-9e1"/>
+                            <constraint firstItem="Kt6-9p-acL" firstAttribute="top" secondItem="Qm1-aP-i0e" secondAttribute="top" constant="30" id="oqk-op-FpA"/>
+                            <constraint firstItem="FJh-nw-eiG" firstAttribute="leading" secondItem="Qm1-aP-i0e" secondAttribute="leading" constant="20" id="rBt-O0-p97"/>
+                            <constraint firstItem="rML-LA-cQ5" firstAttribute="centerX" secondItem="Kt6-9p-acL" secondAttribute="centerX" id="siY-D9-JOO"/>
+                            <constraint firstItem="FJh-nw-eiG" firstAttribute="top" secondItem="rML-LA-cQ5" secondAttribute="bottom" constant="80" id="ueP-Ti-XSw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qm1-aP-i0e"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="o5c-4R-eaK"/>
+                    <connections>
+                        <outlet property="emailField" destination="FJh-nw-eiG" id="rBG-RM-lz9"/>
+                        <outlet property="pageLogo" destination="rML-LA-cQ5" id="Jwf-W1-O3s"/>
+                        <outlet property="pageTitle" destination="Kt6-9p-acL" id="PjM-Jq-ZrH"/>
+                        <outlet property="passwordField" destination="6PD-5K-Vn4" id="o4N-xU-9f2"/>
+                        <outlet property="registerButton" destination="aeM-b7-PvL" id="b1O-8d-zgk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E0C-m6-blu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-582" y="118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.right" catalog="system" width="64" height="48"/>
+        <image name="pipette" width="398.5" height="426.5"/>
+    </resources>
 </document>

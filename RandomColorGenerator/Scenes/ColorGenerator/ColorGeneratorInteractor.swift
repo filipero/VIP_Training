@@ -14,13 +14,13 @@ protocol ColorGeneratorInteractorProtocol {
 }
 
 class ColorGeneratorInteractor: ColorGeneratorInteractorProtocol {
+    
+    var presenter: ColorGeneratorPresenterProtocol?
+    
     func fetchHexValue(value: String) {
         UIPasteboard.general.string = value
         self.presenter?.presentHexValue()
     }
-    
-    
-    var presenter: ColorGeneratorPresenterProtocol?
     
     func fetchColor() {
         

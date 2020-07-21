@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,12 @@
 		3F0545FD24A3B12F004E0742 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0545FC24A3B12F004E0742 /* UIColorExtensions.swift */; };
 		3F0545FF24A65118004E0742 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0545FE24A65118004E0742 /* ViewControllerExtensions.swift */; };
 		3F124D1124C0B05500E94874 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F124D1024C0B05500E94874 /* GoogleService-Info.plist */; };
+		3F124D1624C0B6ED00E94874 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F124D1524C0B6ED00E94874 /* RegisterInteractor.swift */; };
+		3F124D1824C0B70500E94874 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F124D1724C0B70500E94874 /* RegisterPresenter.swift */; };
+		3F124D1A24C0B71200E94874 /* RegisterViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F124D1924C0B71200E94874 /* RegisterViewControllerProtocols.swift */; };
+		3F124D1D24C2675A00E94874 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F124D1B24C2675A00E94874 /* RegisterViewController.swift */; };
+		3F124D2024C2AF9000E94874 /* FIrebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F124D1F24C2AF9000E94874 /* FIrebaseService.swift */; };
+		3F124D3724C5E80700E94874 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F124D3624C5E80700E94874 /* AuthModel.swift */; };
 		3F297C6E940727FCC44EF82D /* Pods_RandomColorGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13126AE9739E7673637A40E8 /* Pods_RandomColorGenerator.framework */; };
 		556958C4926429E630131E06 /* Pods_RandomColorGeneratorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD28914E5AD4E737A991A3E7 /* Pods_RandomColorGeneratorTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +60,30 @@
 		3F0545FC24A3B12F004E0742 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		3F0545FE24A65118004E0742 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		3F124D1024C0B05500E94874 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F124D1524C0B6ED00E94874 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		3F124D1724C0B70500E94874 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		3F124D1924C0B71200E94874 /* RegisterViewControllerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewControllerProtocols.swift; sourceTree = "<group>"; };
+		3F124D1B24C2675A00E94874 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3F124D1F24C2AF9000E94874 /* FIrebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIrebaseService.swift; sourceTree = "<group>"; };
+		3F124D2324C4B30D00E94874 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		3F124D2424C4B30E00E94874 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		3F124D2524C4B30E00E94874 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		3F124D2624C4B30E00E94874 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		3F124D2724C4B30F00E94874 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		3F124D2824C4B30F00E94874 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		3F124D2924C4B30F00E94874 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		3F124D2A24C4B31000E94874 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		3F124D2B24C4B31000E94874 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		3F124D2C24C4B31000E94874 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		3F124D2D24C4B31000E94874 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		3F124D2E24C4B31100E94874 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		3F124D2F24C4B31100E94874 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		3F124D3024C4B31100E94874 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		3F124D3124C4B31100E94874 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		3F124D3224C4B31200E94874 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3F124D3324C4B31200E94874 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		3F124D3424C4B31200E94874 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		3F124D3624C5E80700E94874 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		60B0A758B1E30C9B133E0994 /* Pods-RandomColorGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGenerator.release.xcconfig"; path = "Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator.release.xcconfig"; sourceTree = "<group>"; };
 		A30F6DE38836E4DF3309EF5A /* Pods-RandomColorGeneratorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGeneratorTests.release.xcconfig"; path = "Target Support Files/Pods-RandomColorGeneratorTests/Pods-RandomColorGeneratorTests.release.xcconfig"; sourceTree = "<group>"; };
 		DAA47A2EB8E0A7B513BEA947 /* Pods-RandomColorGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGenerator.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +133,8 @@
 		3F0545D024A3AFF7004E0742 /* RandomColorGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				3F124D3524C5E7DA00E94874 /* Models */,
+				3F124D2124C4B2F100E94874 /* Utils */,
 				3F0545FB24A3B11D004E0742 /* Services */,
 				3F0545F324A3B067004E0742 /* Scenes */,
 				3F0545D124A3AFF7004E0742 /* AppDelegate.swift */,
@@ -128,6 +160,7 @@
 		3F0545F324A3B067004E0742 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				3F124D1224C0B6A400E94874 /* Register */,
 				3F0545F424A3B078004E0742 /* ColorGenerator */,
 			);
 			path = Scenes;
@@ -149,8 +182,61 @@
 			children = (
 				3F0545FC24A3B12F004E0742 /* UIColorExtensions.swift */,
 				3F0545FE24A65118004E0742 /* ViewControllerExtensions.swift */,
+				3F124D1F24C2AF9000E94874 /* FIrebaseService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		3F124D1224C0B6A400E94874 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				3F124D1524C0B6ED00E94874 /* RegisterInteractor.swift */,
+				3F124D1724C0B70500E94874 /* RegisterPresenter.swift */,
+				3F124D1B24C2675A00E94874 /* RegisterViewController.swift */,
+				3F124D1924C0B71200E94874 /* RegisterViewControllerProtocols.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		3F124D2124C4B2F100E94874 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3F124D2224C4B2F800E94874 /* Fonts */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3F124D2224C4B2F800E94874 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3F124D2524C4B30E00E94874 /* Raleway-Black.ttf */,
+				3F124D2D24C4B31000E94874 /* Raleway-BlackItalic.ttf */,
+				3F124D2A24C4B31000E94874 /* Raleway-Bold.ttf */,
+				3F124D3224C4B31200E94874 /* Raleway-BoldItalic.ttf */,
+				3F124D2C24C4B31000E94874 /* Raleway-ExtraBold.ttf */,
+				3F124D3124C4B31100E94874 /* Raleway-ExtraBoldItalic.ttf */,
+				3F124D3424C4B31200E94874 /* Raleway-ExtraLight.ttf */,
+				3F124D2824C4B30F00E94874 /* Raleway-ExtraLightItalic.ttf */,
+				3F124D3324C4B31200E94874 /* Raleway-Italic.ttf */,
+				3F124D2B24C4B31000E94874 /* Raleway-Light.ttf */,
+				3F124D2724C4B30F00E94874 /* Raleway-LightItalic.ttf */,
+				3F124D2924C4B30F00E94874 /* Raleway-Medium.ttf */,
+				3F124D2324C4B30D00E94874 /* Raleway-MediumItalic.ttf */,
+				3F124D2624C4B30E00E94874 /* Raleway-Regular.ttf */,
+				3F124D2424C4B30E00E94874 /* Raleway-SemiBold.ttf */,
+				3F124D2E24C4B31100E94874 /* Raleway-SemiBoldItalic.ttf */,
+				3F124D2F24C4B31100E94874 /* Raleway-Thin.ttf */,
+				3F124D3024C4B31100E94874 /* Raleway-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3F124D3524C5E7DA00E94874 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F124D3624C5E80700E94874 /* AuthModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5EA29DFD50E2344B6680DA4D /* Pods */ = {
@@ -161,7 +247,6 @@
 				2088F92BD2677BC28076C4EB /* Pods-RandomColorGeneratorTests.debug.xcconfig */,
 				A30F6DE38836E4DF3309EF5A /* Pods-RandomColorGeneratorTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -343,10 +428,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F124D1A24C0B71200E94874 /* RegisterViewControllerProtocols.swift in Sources */,
+				3F124D1624C0B6ED00E94874 /* RegisterInteractor.swift in Sources */,
 				3F0545FF24A65118004E0742 /* ViewControllerExtensions.swift in Sources */,
+				3F124D1D24C2675A00E94874 /* RegisterViewController.swift in Sources */,
+				3F124D2024C2AF9000E94874 /* FIrebaseService.swift in Sources */,
+				3F124D1824C0B70500E94874 /* RegisterPresenter.swift in Sources */,
 				3F0545D624A3AFF7004E0742 /* ColorGeneratorViewController.swift in Sources */,
 				3F0545D224A3AFF7004E0742 /* AppDelegate.swift in Sources */,
 				3F0545F624A3B0D5004E0742 /* ColorGeneratorInteractor.swift in Sources */,
+				3F124D3724C5E80700E94874 /* AuthModel.swift in Sources */,
 				3F0545D424A3AFF7004E0742 /* SceneDelegate.swift in Sources */,
 				3F0545F824A3B0E3004E0742 /* ColorGeneratorPresenter.swift in Sources */,
 				3F0545FD24A3B12F004E0742 /* UIColorExtensions.swift in Sources */,

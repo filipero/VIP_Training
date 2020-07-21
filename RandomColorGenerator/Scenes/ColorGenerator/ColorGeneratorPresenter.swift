@@ -15,6 +15,7 @@ protocol ColorGeneratorPresenterProtocol {
 }
 
 class ColorGeneratorPresenter: ColorGeneratorPresenterProtocol {
+    
     var controller: ColorGeneratorViewControllerProtocol?
     
     func presentHexValue(){

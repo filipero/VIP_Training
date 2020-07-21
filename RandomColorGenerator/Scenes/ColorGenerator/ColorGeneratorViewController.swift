@@ -16,7 +16,7 @@ class ColorGeneratorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        hexValue.setTitle("8E8E93", for: .normal)
+        //hexValue.setTitle("8E8E93", for: .normal)
     }
     
     var interactor: ColorGeneratorInteractorProtocol?
