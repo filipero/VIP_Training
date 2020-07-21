@@ -9,14 +9,19 @@
 import Foundation
 
 protocol RegisterPresenterProtocol {
-    func present()
+    func presentHomeScreen()
+    func presentErrorAlert(message: String)
 }
 
 class RegisterPresenter: RegisterPresenterProtocol {
     var controller: RegisterViewControllerProtocol?
     
-    func present() {
+    func presentHomeScreen() {
         
-        controller?.show()
+        controller?.showHomeScreen()
+    }
+    func presentErrorAlert(message: String) {
+        
+        controller?.showErrorAlert(message: message)
     }
 }

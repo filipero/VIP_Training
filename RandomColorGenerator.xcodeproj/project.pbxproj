@@ -25,6 +25,7 @@
 		3F124D1A24C0B71200E94874 /* RegisterViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F124D1924C0B71200E94874 /* RegisterViewControllerProtocols.swift */; };
 		3F124D1D24C2675A00E94874 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F124D1B24C2675A00E94874 /* RegisterViewController.swift */; };
 		3F124D2024C2AF9000E94874 /* FIrebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F124D1F24C2AF9000E94874 /* FIrebaseService.swift */; };
+		3F124D3724C5E80700E94874 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F124D3624C5E80700E94874 /* AuthModel.swift */; };
 		3F297C6E940727FCC44EF82D /* Pods_RandomColorGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13126AE9739E7673637A40E8 /* Pods_RandomColorGenerator.framework */; };
 		556958C4926429E630131E06 /* Pods_RandomColorGeneratorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD28914E5AD4E737A991A3E7 /* Pods_RandomColorGeneratorTests.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		3F124D3224C4B31200E94874 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
 		3F124D3324C4B31200E94874 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
 		3F124D3424C4B31200E94874 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		3F124D3624C5E80700E94874 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		60B0A758B1E30C9B133E0994 /* Pods-RandomColorGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGenerator.release.xcconfig"; path = "Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator.release.xcconfig"; sourceTree = "<group>"; };
 		A30F6DE38836E4DF3309EF5A /* Pods-RandomColorGeneratorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGeneratorTests.release.xcconfig"; path = "Target Support Files/Pods-RandomColorGeneratorTests/Pods-RandomColorGeneratorTests.release.xcconfig"; sourceTree = "<group>"; };
 		DAA47A2EB8E0A7B513BEA947 /* Pods-RandomColorGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGenerator.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		3F0545D024A3AFF7004E0742 /* RandomColorGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				3F124D3524C5E7DA00E94874 /* Models */,
 				3F124D2124C4B2F100E94874 /* Utils */,
 				3F0545FB24A3B11D004E0742 /* Services */,
 				3F0545F324A3B067004E0742 /* Scenes */,
@@ -226,6 +229,14 @@
 				3F124D3024C4B31100E94874 /* Raleway-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3F124D3524C5E7DA00E94874 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F124D3624C5E80700E94874 /* AuthModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5EA29DFD50E2344B6680DA4D /* Pods */ = {
@@ -426,6 +437,7 @@
 				3F0545D624A3AFF7004E0742 /* ColorGeneratorViewController.swift in Sources */,
 				3F0545D224A3AFF7004E0742 /* AppDelegate.swift in Sources */,
 				3F0545F624A3B0D5004E0742 /* ColorGeneratorInteractor.swift in Sources */,
+				3F124D3724C5E80700E94874 /* AuthModel.swift in Sources */,
 				3F0545D424A3AFF7004E0742 /* SceneDelegate.swift in Sources */,
 				3F0545F824A3B0E3004E0742 /* ColorGeneratorPresenter.swift in Sources */,
 				3F0545FD24A3B12F004E0742 /* UIColorExtensions.swift in Sources */,

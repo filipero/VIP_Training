@@ -137,6 +137,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="wQ7-Sx-icc"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
                                 <color key="tintColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Concluir cadastro" image="arrow.right" catalog="system">
                                     <color key="titleColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -151,17 +152,30 @@
                                 <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cr-qf-5El">
+                                <rect key="frame" x="20" y="590" width="335" height="31"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="16"/>
+                                <state key="normal" title="Já possui uma conta?">
+                                    <color key="titleColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapGoToLoginPage:" destination="OEi-vF-03l" eventType="touchUpInside" id="Qee-ym-bDw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6PD-5K-Vn4" firstAttribute="leading" secondItem="Qm1-aP-i0e" secondAttribute="leading" constant="20" id="2Sy-PP-obf"/>
                             <constraint firstItem="aeM-b7-PvL" firstAttribute="leading" secondItem="Qm1-aP-i0e" secondAttribute="leading" constant="20" id="6ZE-1E-4k6"/>
+                            <constraint firstItem="2Cr-qf-5El" firstAttribute="leading" secondItem="Qm1-aP-i0e" secondAttribute="leading" constant="20" id="BAW-ov-WwQ"/>
                             <constraint firstItem="rML-LA-cQ5" firstAttribute="top" secondItem="Kt6-9p-acL" secondAttribute="bottom" constant="35" id="BNK-PI-LXp"/>
                             <constraint firstItem="6PD-5K-Vn4" firstAttribute="top" secondItem="FJh-nw-eiG" secondAttribute="bottom" constant="15" id="CqG-q9-qRO"/>
                             <constraint firstItem="Qm1-aP-i0e" firstAttribute="trailing" secondItem="Kt6-9p-acL" secondAttribute="trailing" id="FlI-gl-LmF"/>
                             <constraint firstItem="Kt6-9p-acL" firstAttribute="leading" secondItem="Qm1-aP-i0e" secondAttribute="leading" id="Jlk-nG-FJI"/>
                             <constraint firstItem="aeM-b7-PvL" firstAttribute="top" secondItem="6PD-5K-Vn4" secondAttribute="bottom" constant="80" id="OXo-Wo-Kh4"/>
                             <constraint firstItem="Qm1-aP-i0e" firstAttribute="trailing" secondItem="6PD-5K-Vn4" secondAttribute="trailing" constant="20" id="Qmu-y3-NfH"/>
+                            <constraint firstItem="2Cr-qf-5El" firstAttribute="top" secondItem="aeM-b7-PvL" secondAttribute="bottom" constant="15" id="XEn-ea-m0o"/>
+                            <constraint firstItem="Qm1-aP-i0e" firstAttribute="trailing" secondItem="2Cr-qf-5El" secondAttribute="trailing" constant="20" id="eo9-Qf-tyu"/>
                             <constraint firstItem="Qm1-aP-i0e" firstAttribute="trailing" secondItem="FJh-nw-eiG" secondAttribute="trailing" constant="20" id="iEk-MW-ake"/>
                             <constraint firstItem="Qm1-aP-i0e" firstAttribute="trailing" secondItem="aeM-b7-PvL" secondAttribute="trailing" constant="20" id="l9R-1G-9e1"/>
                             <constraint firstItem="Kt6-9p-acL" firstAttribute="top" secondItem="Qm1-aP-i0e" secondAttribute="top" constant="30" id="oqk-op-FpA"/>

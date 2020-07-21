@@ -7,13 +7,24 @@
 //
 
 import Foundation
+import UIKit
 
 protocol RegisterViewControllerProtocol{
-    func show()
+    func showHomeScreen()
+    func showErrorAlert(message: String)
 }
 
 extension RegisterViewController: RegisterViewControllerProtocol{
-    func show() {
+    func showErrorAlert(message: String) {
+        DispatchQueue.main.async {
+            let alertController = UIAlertController(title: "Erro!", message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alertController,animated: true, completion: nil)
+        }
+    }
+    
+    func showHomeScreen() {
         
     }
+    
 }

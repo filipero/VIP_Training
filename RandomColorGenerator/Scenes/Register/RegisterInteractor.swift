@@ -7,18 +7,24 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseAuth
 
 protocol RegisterInteractorProtocol {
-    func fetch(email: String, password: String)
+    func RegistrationProcess(user: AuthModel)
 }
 
 class RegisterInteractor: RegisterInteractorProtocol {
     
     var presenter: RegisterPresenterProtocol?
     
-    func fetch(email: String, password: String) {
-        AuthService().RegisterUser(email: email, password: password)
-        
-        presenter?.present()
+    func RegistrationProcess(user: AuthModel) {
+        AuthService().FAuth.createUser(withEmail: user.email, password: user.password) { authResult, error in
+            if error != nil {
+                self.presenter?.presentErrorAlert(message: error!.localizedDescription)
+            } else {
+                self.presenter?.presentHomeScreen()
+            }
+        }
     }
 }

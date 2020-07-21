@@ -72,12 +72,13 @@ class RegisterViewController: UIViewController {
         }
     
     @IBAction func didTapRegisterButton(_ sender: UIButton) {
-        guard let email = emailField.text, !email.isEmpty, let password = passwordField.text, !password.isEmpty else {
-            print("An error has occurred")
-            return
-        }
-        interactor?.fetch(email: email, password: password)
+        interactor?.RegistrationProcess(user: AuthModel(email: emailField.text!, password: passwordField.text!))
     }
+    
+    @IBAction func didTapGoToLoginPage(_ sender: UIButton) {
+        print("Go to login page")
+    }
+    
 }
 
 
